@@ -22,14 +22,33 @@ body{
     position:relative;
   }
 
-  #section1-pic{
+  #section2{
+    height:100vh;
+    position:relative;
+  }
+
+  #section1-picture{
+    background-repeat: no-repeat;
+    background-position: center;
 width: 100%;
 border-radius: 5px;
 height:100%;
-object-fit: cover;
+background-size: 100%;
+background-image: url("pictures/header.webp");
   }
 
   #section1-main-text-container{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  #section2-main-text-container{
     height: fit-content;
     width: fit-content;
     position: absolute;
@@ -46,7 +65,19 @@ object-fit: cover;
     color:white;
   }
 
+  #section2-text2{
+    margin:0 auto;
+  }
+
+  .section2-text{
+    font-size:60px;
+    display: block;
+    width: fit-content;
+    color:black;
+  }
+
   #navbar{
+    z-index:1;
     font-size:30px;
     height: 50px;
     position: fixed;
